@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anuj mishra portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <script>
+    $(function () {
+      $("#responsive-off").click(function () {
+        $('meta[name="viewport"]').prop("content", "width=initial");
+      });
+      $("#responsive-on").click(function () {
+        $('meta[name="viewport"]').prop(
+          "content",
+          "width=device-width, initial-scale=1"
+        );
+      });
+    });
+  </script>
+
+  <style>
+    /*to mobile switcher from desktop on mobile*/
+
+    @media (min-width: 1024px) {
+      #responsive-on {
+        display: block;
+      }
+      #responsive-off {
+        display: none;
+      }
+    }
+
+    /*to desktop switcher on mobile*/
+
+    @media (max-width: 1024px) {
+      #responsive-on {
+        display: none;
+      }
+      #responsive-off {
+        display: block;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Anuj Mishra Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/"> Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html"> Contact</a></li>
+            <li><a href="/courses.html"> Courses</a></li>
+            <!-- <li><a href="#"> About me</a></li> -->
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi i am <span class="textpurple">Anuj Mishra</span>
+          <div>
+            and i am a passinate
+
+            <span id="element"></span>
+            <div class="buttons">
+              <button class="btn">Download resume</button>
+              <button class="btn">Git Hub</button>
+            </div>
+          </div>
+        </div>
+        <div class="rightsection"><img src="anuj.png" alt="" /></div>
+      </section>
+
+      <hr />
+      <section class="secondsection">
+        <span class="textgrey">What i have done so far</span>
+        <h1>work experience</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="img-top" src="img.png" alt="" />
+            <div class="vertical-title">python developer(2011-2013)</div>
+          </div>
+          <div class="vertical-desc">
+            The python language is my first language that i will be learn and I
+            will also teach the full python easily
+          </div>
+
+          <div class="vertical">
+            <img class="img-top" src="img.png" alt="" />
+            <div class="vertical-title">HTML developer(2015-2016)</div>
+          </div>
+          <div class="vertical-desc">
+            The html is the language that have been use for designining the
+            website
+          </div>
+
+          <div class="vertical">
+            <img class="img-top" src="img.png" alt="" />
+            <div class="vertical-title">React developer(2013-2015)</div>
+          </div>
+          <div class="vertical-desc">
+            The React js is the framework for the frontend developer.It is the
+            best plateform to make the one page web applications
+          </div>
+
+          <div class="vertical">
+            <img class="img-top" src="img.png" alt="" />
+            <div class="vertical-title">web developer(2016-2018)</div>
+          </div>
+          <div class="vertical-desc">
+            I will start the web development with the help of the html,css,js
+            and after that i will learn the framework called the react js
+          </div>
+
+          <div class="vertical">
+            <img class="img-top" src="img.png" alt="" />
+            <div class="vertical-title">App developer(2018-2020)</div>
+          </div>
+          <div class="vertical-desc">
+            The native app development that i will start with the help of
+            "react-native".The resion that i will learn this language is
+            beacause some code of the react-native is same as the react js.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">Anuj developer portfolio</div>
+
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Courses</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Courses</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Courses</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-rights">
+        Copyright © www.anujmishraportfolio.com | All right reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web developer", "App developer", "Teacher"],
+        typeSpeed: 50,
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <div id="responsive-switcher">
+      <span id="responsive-on"
+        ><strong>Click to switch to mobile view</strong> <br /><i
+          >(this switches back to mobile freiendly viewport on mobile</i
+        ></span
+      ><span id="responsive-off"
+        ><strong>Click to switch to desktop view</strong> <br /><i
+          >(this shows on screen smaller then 1024px)</i
+        ></span
+      >
+    </div>
+  </body>
+</html>

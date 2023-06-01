@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Courses</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+ background-color:  #e3ff005c;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+.course {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.red{
+    color:red;
+    font-size: 39px;
+    margin: 97px;
+}
+
+.container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .header h1 {
+        margin: 0;
+      }
+
+      .courses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .course {
+        width: 30%;
+        background-color: #eee;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .course h3 {
+        margin: 0;
+      }
+</style>
+<body>
+  <header>
+   
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html" class="active">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- <section class="course">
+      <h2>Course 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique condimentum mollis. Nulla bibendum posuere tellus, eget aliquam lectus tristique id.</p>
+    </section>
+    
+    <section class="course">
+      <h2>Course 2</h2>
+      <p>Nullam ac tortor sem. Phasellus vitae neque ut velit sagittis lobortis. Sed id semper lectus.</p>
+    </section>
+    
+    <section class="course">
+      <h2>Course 3</h2>
+      <p>Donec ut felis tempus, volutpat nibh id, gravida velit. Proin non semper est. Fusce mollis, sapien a tempor vestibulum, nunc ex fermentum justo, et eleifend nisl ex non odio.</p>
+    </section> -->
+
+    <div class="container">
+        <header class="header">
+          <h1>My Online Course Store</h1>
+        </header>
+        <section class="courses">
+          <article class="course">
+            <h3>Learn HTML</h3>
+            <p>Learn how to create a website using HTML</p>
+            <button>Enroll Now</button>
+          </article>
+          <article class="course">
+            <h3>Learn CSS</h3>
+            <p>Learn how to style your website using CSS</p>
+            <button>Enroll Now</button>
+          </article>
+          <article class="course">
+            <h3>Learn JavaScript</h3>
+            <p>Learn how to add interactivity to your website using JavaScript</p>
+            <button>Enroll Now</button>
+          </article>
+        </section>
+      </div>
+    <h1 style="
+        margin-top: 200px;
+        text-align: center;
+    "><span class="red">NOTICE:</span> For learn web development for the placement contact me </h1>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Get all buttons on the page
+    const buttons = document.querySelectorAll("button");
+  
+    // Add click event listener to each button
+    
+    // buttons.forEach(function(button) {
+    //   button.addEventListener("click", function() {
+    //      alert("You have enrolled in the course!");
+        
+    //   });
+    // });
+    
+    
+    buttons.forEach(function(button) {
+      button.addEventListener("click", function redirect() {
+        window.location.href = "contact.html"      
+      });
+    });
+  </script>
+  
+</body>
+</html>
